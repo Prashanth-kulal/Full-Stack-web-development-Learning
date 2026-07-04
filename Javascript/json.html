@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let obj={
+    "name":"Prashanth",
+    "Age":21
+    }
+    console.log(obj);
+    console.log(typeof(obj));
+    console.log(obj.name);
+    
+    let json=JSON.stringify(obj);
+    console.log(json);
+    console.log(typeof(json));
+    console.log(json.name)
+
+    let json1=JSON.parse(json);
+    console.log(json1);
+    console.log(typeof(json1));
+
+    let obj1={
+    "name":'Prash"anth',
+    "Age":21
+    }
+    let json2=JSON.stringify(obj1);
+    console.log(json2);
+
+    let json3=JSON.parse(json2);
+    console.log(json3);
+  </script>
+</body>
+</html>
