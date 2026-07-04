@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #firstcontainer {
+      width: 300px;
+      height: 200px;
+      background: aqua;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+
+<div id="firstcontainer" class="container">
+  Move the mouse here
+</div>
+
+<script>
+  clickIt=()=>{
+    document.querySelectorAll('.container')[0].innerHTML="<b>clicked</b>"
+    console.warn("Button was clicked")
+    // alert("Button was clicked")
+  }
+  setTimeout(clickIt,5000);
+
+
+  clicked=()=>{
+    console.warn("don't click it");
+  }
+  clr=setInterval(clicked,3000);
+</script>
+
+</body>
+</html>
